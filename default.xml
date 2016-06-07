@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com"
+           revision="refs/tags/android-6.0.1_r46" />
+
+  <remote  name="private"
+           fetch="ssh://git@github.com" />
+
+  <remote  name="github"
+                fetch="git://github.com/"
+                review="https://gerrit.bbqdroid.org/" />
+                
+  <default revision="refs/heads/c6"
+           remote="github"
+           sync-c="true"
+           sync-j="4" />
+
+  <remote  name="cd"
+           fetch="https://github.com/CandyDevices"
+           revision="c6" />
+
+  <remote  name="cm"
+           fetch="https://github.com/CyanogenMod"
+           revision="cm-13.0" />
+
+  <remote  name="Slim"
+           fetch="git://github.com/SlimRoms"
+           review="https://review.slimroms.org/"/>
+
+  <remote  name="tm"
+           fetch="https://github.com/themuppets"
+           revision="cm-13.0" />
+           
+  <remote  name="aospb"
+           fetch="https://github.com/AOSPB"
+           revision="mm6.0" />
+
+   <!-- aospb Projects -->
+
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="aospb" />
+  <project path="external/android-visualizer" name="external_android-visualizer" remote="aospb" />
+  <project path="external/ant-wireless/ant_service" name="external_ant-wireless_ant_service" remote="aospb" />
+  <project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" remote="aospb" />
+  <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="aospb" />
+  <project path="external/busybox" name="external_busybox" remote="aospb" />
+  <project path="external/connectivity" name="external_connectivity" remote="aospb" />
+  <project path="external/exfat" name="external_exfat" remote="aospb" />
+  <project path="external/fuse" name="external_fuse" remote="aospb" />
+  <project path="external/ntfs-3g" name="external_ntfs-3g" remote="aospb" />
+  <project path="external/tinyalsa" name="external_tinyalsa" remote="aospb" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="aospb" />
+  <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="aospb" />
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="aospb" />
+  <project path="hardware/qcom/audio/default" name="hardware_qcom_audio" remote="aospb" />
+  <project path="hardware/qcom/bt" name="hardware_qcom_bt" remote="aospb" />
+  <project path="hardware/qcom/display" name="hardware_qcom_display" remote="aospb" />
+  <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="aospb" />
+  <project path="hardware/qcom/keymaster" name="hardware_qcom_keymaster" remote="aospb" />
+  <project path="hardware/qcom/media/default" name="hardware_qcom_media" remote="aospb" />
+  <project path="hardware/qcom/power" name="hardware_qcom_power" remote="aospb" />
+  <project path="hardware/ril" name="hardware_ril" remote="aospb" />
+  <project path="hardware/ril-caf" name="hardware_ril" remote="aospb" revision="mm6.0-caf" />
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="aospb" />
+  <project path="system/media" name="system_media" remote="aospb" />
+  <project path="system/netd" name="system_netd" remote="aospb" />
+  <project path="system/qcom" name="system_qcom" remote="aospb" />
+  <project path="system/vold" name="system_vold" remote="aospb" />
+  <project path="prebuilt" name="prebuilt" remote="aospb" />
+  <project path="external/qrngd" name="external_qrngd" remote="aospb" />
+  <project path="external/ffmpeg" name="external_ffmpeg" remote="aospb" />
+  <project path="external/stagefright-plugins" name="external_stagefright-plugins" remote="aospb" />
+
+</manifest>
